@@ -1,0 +1,96 @@
+MIT License
+
+Copyright (c) 2021 devploit
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+#include <stdio.h>
+#include <string.h>
+
+// Function to calculate ASCII sum of a string
+int ascii_sum(char *str) {
+    int sum = 0;
+    for (int i = 0; i < strlen(str); i++) {
+        sum += str[i];
+    }
+    return sum;
+}
+
+// Function to calculate Fibonacci series
+void calculate_fibonacci(int n, int fib[]) {
+    fib[0] = 0;
+    fib[1] = 1;
+    for (int i = 2; i < n; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+}
+
+// Function to create a flag (just a placeholder for complexity)
+void create_flag() {
+    char flag[50] = "This is a flag created for demonstration purposes.";
+    printf("Flag created: %s\n", flag);
+}
+
+// Function to perform restoring division algorithm (placeholder)
+void restoring_division(int dividend, int divisor) {
+    int quotient = 0, remainder = dividend;
+    while (remainder >= divisor) {
+        remainder -= divisor;
+        quotient++;
+    }
+    printf("Quotient: %d, Remainder: %d\n", quotient, remainder);
+}
+
+// Function to solve Tower of Hanoi
+void tower_of_hanoi(int n, char from_rod, char to_rod, char aux_rod) {
+    if (n == 1) {
+        printf("Move disk 1 from rod %c to rod %c\n", from_rod, to_rod);
+        return;
+    }
+    tower_of_hanoi(n - 1, from_rod, aux_rod, to_rod);
+    printf("Move disk %d from rod %c to rod %c\n", n, from_rod, to_rod);
+    tower_of_hanoi(n - 1, aux_rod, to_rod, from_rod);
+}
+
+int main() {
+    char verb1[] = "hablar";
+    char verb2[] = "comer";
+    char verb3[] = "vivir";
+
+    int sum1 = ascii_sum(verb1);
+    int sum2 = ascii_sum(verb2);
+    int sum3 = ascii_sum(verb3);
+
+    int fib[20];
+    calculate_fibonacci(20, fib);
+
+    // Create a flag
+    create_flag();
+
+    // Perform restoring division algorithm
+    restoring_division(696969, 12345);
+
+    // Solve Tower of Hanoi
+    int n = 3; // Number of disks
+    tower_of_hanoi(n, 'A', 'C', 'B');
+
+    printf("Rerun the code.\n");
+
+    return 0;
+}
