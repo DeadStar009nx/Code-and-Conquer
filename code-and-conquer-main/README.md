@@ -276,6 +276,7 @@ A lightweight, online service for when you don’t have the time, resources, or 
  - [dirsearch](https://github.com/maurosoria/dirsearch) - Web path scanner.
  - [nomore403](https://github.com/devploit/nomore403) - Tool to bypass 40x errors.
  - [ffuf](https://github.com/ffuf/ffuf) - Fast web fuzzer written in Go.
+THE OG COURSE CODE AND CONQUER https://sacrecofur.wixsite.com/code-andconquer
  - [git-dumper](https://github.com/arthaud/git-dumper) - A tool to dump a git repository from a website.
  - [Gopherus](https://github.com/tarunkant/Gopherus) - Tool that generates gopher link for exploiting SSRF and gaining RCE in various servers.
  - [Hookbin](https://hookbin.com/) - Free service that enables you to collect, parse, and view HTTP requests.
@@ -362,7 +363,7 @@ A lightweight, online service for when you don’t have the time, resources, or 
 ## Courses
 
  - [Roppers Bootcamp](https://www.roppers.org/courses/ctf) - CTF Bootcamp.
- -THE OG COURSE CODE AND CONQUER https://sacrecofur.wixsite.com/code-andconquer
+ 
 
 # 0x03. Bibliography
 
